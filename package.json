@@ -39,5 +39,9 @@
     "build": "tsup src/index.ts --format esm --dts --clean --loader .css=css",
     "prepack": "npm run build",
     "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/defensestation/blocknote-math.git"
   }
 }
