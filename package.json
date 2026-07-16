@@ -1,0 +1,43 @@
+{
+  "name": "@defensestation/blocknote-math",
+  "version": "0.1.0",
+  "description": "LaTeX math inline content for BlockNote, rendered with KaTeX.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/index.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "./dist/index.css"
+  ],
+  "peerDependencies": {
+    "@blocknote/core": ">=0.51.0 <1.0.0",
+    "@blocknote/react": ">=0.51.0 <1.0.0",
+    "katex": ">=0.16.0 <1.0.0",
+    "react": ">=18.0.0 <20.0.0"
+  },
+  "dependencies": {
+    "@floating-ui/react": "^0.27.18"
+  },
+  "devDependencies": {
+    "@blocknote/core": "^0.51.4",
+    "@blocknote/react": "^0.51.4",
+    "@types/react": "^19.0.0",
+    "katex": "^0.16.22",
+    "react": "^19.0.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean --loader .css=css",
+    "prepack": "npm run build",
+    "typecheck": "tsc --noEmit"
+  }
+}
