@@ -30,7 +30,7 @@
     "@blocknote/core": "^0.51.4",
     "@blocknote/react": "^0.51.4",
     "@types/react": "^19.0.0",
-    "katex": "^0.16.22",
+    "katex": "^0.18.2",
     "react": "^19.0.0",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
